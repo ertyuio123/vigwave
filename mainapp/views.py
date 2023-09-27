@@ -5,6 +5,12 @@ from django.http import HttpResponse
 
 
 # imsi.html 처리
+def hw(request):
+    return render(request,
+                  'mainapp/hw.html',
+                  {})
+
+# imsi.html 처리
 def imsi(request):
     return render(request,
                   'mainapp/imsi.html',

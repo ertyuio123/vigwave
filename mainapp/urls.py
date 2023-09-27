@@ -20,9 +20,11 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
+    
+    ### mainapp (http://127.0.0.1:8000/hw/)
+    path('hw/', views.hw),
     ### mainapp (http://127.0.0.1:8000/imsi/)
     path('imsi/', views.imsi),
-    
     ### mainapp (http://127.0.0.1:8000/)
     path('', views.index),
 
