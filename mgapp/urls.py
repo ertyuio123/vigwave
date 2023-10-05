@@ -20,8 +20,20 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
+    ### about (http://127.0.0.1:8000/mg/nav_test/)
+    path('nav_test/', views.nav_test),
+    ### about (http://127.0.0.1:8000/mg/nav/)
+    path('nav/', views.nav),
+    ### copy2 (http://127.0.0.1:8000/mg/copy2/)
+    path('copy2/', views.copy2),
+    ### about (http://127.0.0.1:8000/mg/copy/)
+    path('copy/', views.copy),
+    ### about (http://127.0.0.1:8000/about/)
+    path('temp/', views.temp),
     ### about (http://127.0.0.1:8000/about/)
     path('about/', views.about),
     ### mainapp (http://127.0.0.1:8000/mg/home/)
     path('home/', views.index),
+    ### mainapp (http://127.0.0.1:8000/mg/home2/)
+    path('home2/', views.index2),
 ]
